@@ -1,0 +1,15 @@
+name: c1-tests
+on: [push]
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    container: python:3.9
+    steps:
+      - uses: action/checkout@v2
+      
+      - name: ci_run
+        run: |
+          pip install -r requirements.txt
+          pytest tests/
+          
+      
