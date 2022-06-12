@@ -1,6 +1,5 @@
-import sys
+
 from src import math_func
-import pytest
 
 
 # @pytest.mark.number
@@ -10,7 +9,7 @@ def test_add():
     assert math_func.add(7) == 9
 
 
-#pytest.mark.number
+# @pytest.mark.number
 def test_product():
     assert math_func.product(5, 5) == 25
     assert math_func.product(5) == 10
