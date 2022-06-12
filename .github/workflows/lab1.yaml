@@ -5,7 +5,7 @@ jobs:
     runs-on: [ubuntu-latest]
     container: python:3.9
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
       
       - name: ci_run
         run: |
